@@ -1,0 +1,1091 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cheatsheet</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="coding-interview-cheat-sheet">Coding interview cheat sheet</h1>
+<h4 id="math-basics">Math basics:</h4>
+<ul>
+<li>for every c that does not depend on i <span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>c</mi><mo>=</mo><mi>n</mi><mi>c</mi><mspace width="1em"></mspace></mrow><annotation encoding="application/x-tex">\sum_{i=1}^n c = nc\quad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 2.92907em; vertical-align: -1.27767em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.6514em;"><span class="" style="top: -1.87233em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span class="" style="top: -3.05001em;"><span class="pstrut" style="height: 3.05em;"></span><span class=""><span class="mop op-symbol large-op">∑</span></span></span><span class="" style="top: -4.30001em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 1.27767em;"><span class=""></span></span></span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">n</span><span class="mord mathnormal">c</span><span class="mspace" style="margin-right: 1em;"></span></span></span></span></span></span></li>
+<li>sum of the simplest arithmetic progression, consisting of the first <em>n</em> natural numbers <span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mi>i</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>i</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac><mspace width="2em"></mspace><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mi>m</mi></mrow><mi>n</mi></munderover><mi>i</mi><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>−</mo><mi>m</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mi>m</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\sum_{i=0}^n i = \sum_{i=1}^n i = \frac{n(n+1)}{2}\qquad \sum_{i=m}^n i = \frac{(n+1-m)(n+m)}{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 2.92907em; vertical-align: -1.27767em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.6514em;"><span class="" style="top: -1.87233em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span class="" style="top: -3.05001em;"><span class="pstrut" style="height: 3.05em;"></span><span class=""><span class="mop op-symbol large-op">∑</span></span></span><span class="" style="top: -4.30001em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 1.27767em;"><span class=""></span></span></span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 2.92907em; vertical-align: -1.27767em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.6514em;"><span class="" style="top: -1.87233em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span class="" style="top: -3.05001em;"><span class="pstrut" style="height: 3.05em;"></span><span class=""><span class="mop op-symbol large-op">∑</span></span></span><span class="" style="top: -4.30001em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 1.27767em;"><span class=""></span></span></span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 2.92907em; vertical-align: -1.27767em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.427em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord">2</span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.686em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 2em;"></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.6514em;"><span class="" style="top: -1.87233em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mathnormal mtight">m</span></span></span></span><span class="" style="top: -3.05001em;"><span class="pstrut" style="height: 3.05em;"></span><span class=""><span class="mop op-symbol large-op">∑</span></span></span><span class="" style="top: -4.30001em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 1.27767em;"><span class=""></span></span></span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 2.113em; vertical-align: -0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.427em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord">2</span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mord">1</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mord mathnormal">m</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mord mathnormal">m</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.686em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></span></li>
+<li>sum of first odd natural numbers <span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false">(</mo><mn>2</mn><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><msup><mi>n</mi><mn>2</mn></msup><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\sum_{i=1}^n (2i-1) = n^2\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 2.92907em; vertical-align: -1.27767em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.6514em;"><span class="" style="top: -1.87233em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span class="" style="top: -3.05001em;"><span class="pstrut" style="height: 3.05em;"></span><span class=""><span class="mop op-symbol large-op">∑</span></span></span><span class="" style="top: -4.30001em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 1.27767em;"><span class=""></span></span></span></span></span><span class="mopen">(</span><span class="mord">2</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.864108em; vertical-align: 0em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.864108em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 2em;"></span></span></span></span></span></span></li>
+<li>sum of first even natural numbers <span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mn>2</mn><mi>i</mi><mo>=</mo><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\sum_{i=0}^{n} 2i = n(n+1)\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 2.92907em; vertical-align: -1.27767em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.6514em;"><span class="" style="top: -1.87233em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span class="" style="top: -3.05001em;"><span class="pstrut" style="height: 3.05em;"></span><span class=""><span class="mop op-symbol large-op">∑</span></span></span><span class="" style="top: -4.30001em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 1.27767em;"><span class=""></span></span></span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord">2</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right: 2em;"></span></span></span></span></span></span></li>
+<li>a sum of logarithms is the logarithm of the product <span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>log</mi><mo>⁡</mo><mi>i</mi><mo>=</mo><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">!</mo><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{n} \log i = \log n!\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 2.92907em; vertical-align: -1.27767em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.6514em;"><span class="" style="top: -1.87233em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span class="" style="top: -3.05001em;"><span class="pstrut" style="height: 3.05em;"></span><span class=""><span class="mop op-symbol large-op">∑</span></span></span><span class="" style="top: -4.30001em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 1.27767em;"><span class=""></span></span></span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.88888em; vertical-align: -0.19444em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord mathnormal">n</span><span class="mclose">!</span><span class="mspace" style="margin-right: 2em;"></span></span></span></span></span></span></li>
+<li>sum of the first square numbers: <span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>6</mn></mfrac><mo>=</mo><mfrac><msup><mi>n</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo>+</mo><mfrac><msup><mi>n</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>+</mo><mfrac><mi>n</mi><mn>6</mn></mfrac><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\sum_{i=0}^n i^2 = \sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6} = \frac{n^3}{3} + \frac{n^2}{2} + \frac{n}{6}\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 2.92907em; vertical-align: -1.27767em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.6514em;"><span class="" style="top: -1.87233em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span class="" style="top: -3.05001em;"><span class="pstrut" style="height: 3.05em;"></span><span class=""><span class="mop op-symbol large-op">∑</span></span></span><span class="" style="top: -4.30001em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 1.27767em;"><span class=""></span></span></span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord"><span class="mord mathnormal">i</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.864108em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 2.92907em; vertical-align: -1.27767em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.6514em;"><span class="" style="top: -1.87233em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span class="" style="top: -3.05001em;"><span class="pstrut" style="height: 3.05em;"></span><span class=""><span class="mop op-symbol large-op">∑</span></span></span><span class="" style="top: -4.30001em; margin-left: 0em;"><span class="pstrut" style="height: 3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 1.27767em;"><span class=""></span></span></span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord"><span class="mord mathnormal">i</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.864108em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 2.113em; vertical-align: -0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.427em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord">6</span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord">2</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.686em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 2.17711em; vertical-align: -0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.49111em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord">3</span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.686em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 2.17711em; vertical-align: -0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.49111em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord">2</span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.686em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1.79356em; vertical-align: -0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.10756em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord">6</span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord mathnormal">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.686em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 2em;"></span></span></span></span></span></span></li>
+<li>sum of powers of 2: <span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mn>2</mn><mn>0</mn></msup><mo>+</mo><msup><mn>2</mn><mn>1</mn></msup><mo>+</mo><mo>⋯</mo><mo>+</mo><msup><mn>2</mn><mi>k</mi></msup><mo>=</mo><msup><mn>2</mn><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^0+2^1 + \cdots + 2^k = 2^{k+1}-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.947438em; vertical-align: -0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.864108em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.947438em; vertical-align: -0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.864108em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.66666em; vertical-align: -0.08333em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.899108em; vertical-align: 0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.899108em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right: 0.03148em;">k</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.982438em; vertical-align: -0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.899108em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right: 0.03148em;">k</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span></span></span></span></span></span></li>
+<li>permutations of <code>k-lenght</code> substring with all unique characters from string of lenght <code>n</code>: <span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>p</mi><mi>e</mi><mi>r</mi><mi>m</mi><mi>u</mi><mi>t</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>s</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">!</mo></mrow><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo><mo stretchy="false">!</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">permutations = \frac{n!}{(n-k)!}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.85396em; vertical-align: -0.19444em;"></span><span class="mord mathnormal">p</span><span class="mord mathnormal" style="margin-right: 0.02778em;">er</span><span class="mord mathnormal">m</span><span class="mord mathnormal">u</span><span class="mord mathnormal">t</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 2.30744em; vertical-align: -0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.37144em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mclose">)!</span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="mclose">!</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.936em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></span></li>
+<li>combinations (permutations without duplicates), since each <code>k-sized</code> subset can be rearranged <code>k!</code> unique ways into a string, each subset will be duplicated <code>k!</code> times, therefore just divide permutations by <code>k!</code>: <span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>c</mi><mi>o</mi><mi>m</mi><mi>b</mi><mi>i</mi><mi>n</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>s</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">!</mo></mrow><mrow><mi>k</mi><mo stretchy="false">!</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mi>k</mi><mo stretchy="false">)</mo><mo stretchy="false">!</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">combinations = \frac{n!}{k!(n-k)!}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.69444em; vertical-align: 0em;"></span><span class="mord mathnormal">co</span><span class="mord mathnormal">mbina</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal">s</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 2.30744em; vertical-align: -0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.37144em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mclose">!</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mord mathnormal" style="margin-right: 0.03148em;">k</span><span class="mclose">)!</span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="mclose">!</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.936em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></span></li>
+</ul>
+<h4 id="programming-basics">Programming basics</h4>
+<h5 id="solid">SOLID</h5>
+<ol>
+<li><strong>Single responsibility principle</strong> - each module should be responsible for each role. Responsibility should be understood as a <em>reason to change</em>, and concludes that a class or module should have one, and only one, reason to be changed.<br>
+As an example, consider a module that compiles and prints a report. Imagine such a module can be changed for two reasons. First, the content of the report could change. Second, the format of the report could change. These two things change for different causes. The single-responsibility principle says that these two aspects of the problem are really two separate responsibilities, and should, therefore, be in separate classes or modules. It would be a bad design to couple two things that change for different reasons at different times.</li>
+<li><strong>Open-closed principle</strong> - software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.<br>
+A module will be said to be <strong>open</strong> if it is still available for extension. For example, it should be possible to add fields to the data structures it contains, or new elements to the set of functions it performs.<br>
+A module will be said to be <strong>closed</strong> if it is available for use by other modules. This assumes that the module has been given a well-defined, stable description (the interface in the sense of information hiding).</li>
+<li><strong>Liskov substitution principle</strong> - functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it. It is a <strong>strong behavioral subtyping</strong>, a principle that subclasses should satisfy the expectations of clients accessing subclass objects through references of superclass type, not just as regards syntactic safety (such as the absence of “method-not-found” errors) but also as regards behavioral correctness.</li>
+<li><strong>Interface segregation principle</strong> - states that no code should be forced to depend on methods it does not use. ISP splits interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them.</li>
+<li><strong>Dependency inversion principle</strong> - Depend upon abstractions, not concretions. The principle states that high-level modules should not import anything from low-level modules. Both should depend on abstractions (e.g., interfaces). Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.</li>
+</ol>
+<h5 id="oop">OOP</h5>
+<p>Object-oriented programming is a programming paradigm based on the concept of objects which can contain data and code: data in the form of fields (often known as attributes) or propertie, and code in the form of methods.</p>
+<h4 id="java-basics">Java basics</h4>
+<p>The  <em>compareTo</em>  method  compares the current object with the object sent as a parameter.<br>
+When implementing it, we need to make sure that the method returns:</p>
+<ul>
+<li>A positive integer, if the current object is greater than the parameter object.</li>
+<li>A negative integer, if the current object is less than the parameter object.</li>
+<li>Zero, if the current object is equal to the parameter object.</li>
+</ul>
+<p>Basically it is a signum function of current-parameter <code>sig(current-parameter)</code>.</p>
+<h2 id="big-o-asymptotic-notation">Big-O (Asymptotic) notation</h2>
+<h4 id="definition">Definition</h4>
+<p>Asymptotic Notation is the hardware independent notation used to tell the time and space complexity of an algorithm. Meaning it’s a standardized way of measuring how much memory an algorithm uses or how long it runs for given an input.</p>
+<h4 id="complexities">Complexities</h4>
+<p>The following are the Asymptotic rates of growth from best to worst:</p>
+<ul>
+<li>constant growth - <code>O(1)</code> Runtime is constant and does not grow with <code>n</code></li>
+<li>logarithmic growth – <code>O(log n)</code> Runtime grows logarithmically in proportion to <code>n</code>, if number of elements in the problem space halves each time that will be most likely logarythmic growth,</li>
+<li>linear growth – <code>O(n)</code> Runtime grows directly in proportion to <code>n</code>,</li>
+<li>superlinear growth – <code>O(n log n)</code> Runtime grows in proportion <em>and</em> logarithmically to <code>n</code>,</li>
+<li>polynomial growth – <code>O(n^c)</code> Runtime grows quicker than previous all based on <code>n</code>,</li>
+<li>exponential growth – <code>O(c^n)</code> Runtime grows even faster than polynomial growth based on <code>n</code>,</li>
+<li>factorial growth – <code>O(n!)</code> Runtime grows the fastest and becomes quickly unusable for even<br>
+small values of <code>n</code>.</li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Comparison_computational_complexity.svg/400px-Comparison_computational_complexity.svg.png" alt="#"></p>
+<h4 id="tips">Tips</h4>
+<ul>
+<li>Big-O refers to the upper bound of time or space complexity of an algorithm.</li>
+<li>Big-Omega refers to the lower bound of time or space complexity of an algorithm.</li>
+<li>Big-Theta refers to the tight bound of time or space complexity of an algorithm.</li>
+<li>In industry peoeple seem to have merged Big-O and Big-Theta together, in that it ouwld be seen as incorrect to describe priting array as <code>O(n^2)</code>. Industry would just say this is <code>O(N)</code>.</li>
+<li>When estimating complexity of the algorithm always drop the constants and non-dominant terms. With that in mind <code>O(2n^2 + n)</code> becomes <code>O(n^2)</code>.</li>
+<li>Recursive function that makes multiple calls, the runtime will often look like <code>O(branches^depth)</code>. Keep in mind that if depth is log<sub>2</sub>n then <code>O(n^log_2 n)</code> will simplify to <code>O(n)</code>.</li>
+</ul>
+<h2 id="data-structures">Data structures</h2>
+<h3 id="arrays">Arrays</h3>
+<p><strong>Array</strong> is a sequential arrangement of elements of the same data type, stored in contiguous memory locations. It is an ordered collection that confers constant time access to individual elements and efficient memory usage. Each item in an array is called an element, and each element is accessed by its numerical index.<br>
+<strong>Dynamic arrays</strong> are like one dimensional arrays, but have reserved space for additional<br>
+elements. If a dynamic array is full, it copies its contents to a larger array.</p>
+<h5 id="java">Java</h5>
+<ul>
+<li>ArrayList doubles it’s size when it resizes itself.</li>
+<li>Java’s implementation of String is also an arrray, a <code>byte[]</code> array.</li>
+<li>Strings are constant; their values cannot be changed after they are created. String buffers support mutable strings. Because String objects are immutable they can be shared.</li>
+<li>The char data type is a single 16-bit Unicode character. It has a minimum value of <code>\u0000</code> (or 0) and a maximum value of <code>\uffff</code> (or 65,535 inclusive).</li>
+</ul>
+<h5 id="time-complexity">Time Complexity</h5>
+
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Access</th>
+<th>Search</th>
+<th>Insertion</th>
+<th>Deletion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Array</td>
+<td><code>O(1)</code></td>
+<td><code>O(n)</code></td>
+<td><code>O(n)</code></td>
+<td><code>O(n)</code></td>
+</tr>
+<tr>
+<td>Dynamic Array</td>
+<td><code>O(1)</code></td>
+<td><code>O(n)</code></td>
+<td><code>O(n)</code></td>
+<td><code>O(n)</code></td>
+</tr>
+</tbody>
+</table><h5 id="code">Code</h5>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> integerArary <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> integer2DArray <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+ArrayList<span class="token operator">&lt;</span>Integer<span class="token operator">&gt;</span> dynamicIntegerArray <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+String stringLiteral <span class="token operator">=</span> <span class="token string">"abc"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">char</span> data<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+String str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="linked-lists">Linked Lists</h3>
+<p>A linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence. In single linked list, each node points to the next node in the linked list. A doubly linked list gives each node pointers to both the next</p>
+<h5 id="java-1">Java</h5>
+<ul>
+<li><code>LinkedList&lt;&gt;</code> is a doubly-linked list implementation of the <code>List</code> and <code>Deque</code> interfaces. Implements all optional list operations, and permits all elements (including <code>null</code>). All of the operations perform as could be expected for a doubly-linked list.</li>
+</ul>
+<h5 id="time-complexity-1">Time Complexity</h5>
+
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Access</th>
+<th>Search</th>
+<th>Insertion</th>
+<th>Deletion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linked list</td>
+<td><code>O(n)</code></td>
+<td><code>O(n)</code></td>
+<td><code>O(1)</code></td>
+<td><code>O(1)</code></td>
+</tr>
+<tr>
+<td>Doubly linked list</td>
+<td><code>O(n)</code></td>
+<td><code>O(n)</code></td>
+<td><code>O(1)</code></td>
+<td><code>O(1)</code></td>
+</tr>
+</tbody>
+</table><h5 id="code-1">Code</h5>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">class</span> <span class="token class-name">LinkedList</span><span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+	<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">ListNode</span><span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+		<span class="token keyword">private</span> T data<span class="token punctuation">;</span>
+		<span class="token keyword">private</span> ListNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> next<span class="token punctuation">;</span>
+		
+		<span class="token keyword">public</span> <span class="token function">ListNode</span><span class="token punctuation">(</span>T data<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+			<span class="token keyword">this</span><span class="token punctuation">.</span>data <span class="token operator">=</span> data<span class="token punctuation">;</span> 
+		<span class="token punctuation">}</span>
+ 	<span class="token punctuation">}</span>
+
+	<span class="token keyword">private</span> ListNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> head<span class="token punctuation">;</span>
+	<span class="token keyword">private</span> ListNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> tail<span class="token punctuation">;</span>
+	
+	<span class="token keyword">public</span> T <span class="token function">getFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isNull</span><span class="token punctuation">(</span>head<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">EmptyLinkedListException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+		<span class="token keyword">return</span> head<span class="token punctuation">.</span>data<span class="token punctuation">;</span> 
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> T <span class="token function">getLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> T <span class="token function">get</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isNull</span><span class="token punctuation">(</span>head<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">EmptyLinkedListException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+		<span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		var node <span class="token operator">=</span> head<span class="token punctuation">;</span>
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">!=</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isNull</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>next<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IndexOutOfBoundsException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			node <span class="token operator">=</span> node<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+			i<span class="token operator">++</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">return</span> node<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 	
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">insertFirst</span><span class="token punctuation">(</span>T data<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isNull</span><span class="token punctuation">(</span>head<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			head <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			tail <span class="token operator">=</span> head<span class="token punctuation">;</span>
+			<span class="token keyword">return</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		var newNode <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		newNode<span class="token punctuation">.</span>next <span class="token operator">=</span> head<span class="token punctuation">;</span>
+		head <span class="token operator">=</span> newNode<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">insertLast</span><span class="token punctuation">(</span>T data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">public</span> T <span class="token function">removeFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">public</span> T <span class="token function">removeLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">public</span> T <span class="token function">remove</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token function">isNull</span><span class="token punctuation">(</span>head<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> String <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h5 id="hints">Hints</h5>
+<ul>
+<li>“Runner Technique” - used in many linked list problems. Means that you iterate through the linked list with two pointers simultanously, with one ahead of the other.</li>
+<li>Many linked list problems may be solved with recursion if can’t be solved normal way.</li>
+</ul>
+<h3 id="stack">Stack</h3>
+<p>The stack data structure is a linear data structure that accompanies a principle known as LIFO (Last In First Out). A stack typically supports two primary operations:</p>
+<ol>
+<li><code>push(item)</code>: This operation is used to add an element to the top of the stack.</li>
+<li><code>pop()</code>: This operation is used to remove the top element from the stack.</li>
+</ol>
+<p>Additionally, it could support <code>peek()</code> and <code>isEmpty()</code>. Can be implemented as linked list where items are always added and removed from the same side.</p>
+<h5 id="java-2">Java</h5>
+<ul>
+<li>The <code>Stack</code> class represents a last-in-first-out (LIFO) stack of objects. It extends class Vector with five operations that allow a vector to be treated as a stack. The usual push and pop operations are provided, as well as a method to peek at the top item on the stack, a method to test for whether the stack is empty, and a method to search the stack for an item and discover how far it is from the top.</li>
+<li>A more complete and consistent set of LIFO stack operations is provided by the <code>Deque</code> (double ended queue, pronounced <em>deck</em>) interface and its implementations, which should be used in preference to this class.</li>
+</ul>
+<h5 id="time-complexity-2">Time Complexity</h5>
+
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Access</th>
+<th>Search</th>
+<th>Insertion</th>
+<th>Deletion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stack</td>
+<td><code>O(n)</code></td>
+<td><code>O(n)</code></td>
+<td><code>O(1)</code></td>
+<td><code>O(1)</code></td>
+</tr>
+</tbody>
+</table><h5 id="code-2">Code</h5>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Stack</span><span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+	<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">StackNode</span><span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+		<span class="token keyword">private</span> T data<span class="token punctuation">;</span>
+		<span class="token keyword">private</span> StackNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> next<span class="token punctuation">;</span>
+		
+		<span class="token keyword">public</span> <span class="token function">StackNode</span><span class="token punctuation">(</span>T data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">this</span><span class="token punctuation">.</span>data <span class="token operator">=</span> data
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">private</span> StackNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> top<span class="token punctuation">;</span>
+	
+	<span class="token keyword">public</span> T <span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>top <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">EmptyStackException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		T item <span class="token operator">=</span> top<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+		top <span class="token operator">=</span> top<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+		<span class="token keyword">return</span> item<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">push</span><span class="token punctuation">(</span>T item<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		StackNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> newTop <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StackNode</span><span class="token operator">&lt;</span>T<span class="token operator">&gt;</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		newTop<span class="token punctuation">.</span>next <span class="token operator">=</span> top<span class="token punctuation">;</span>
+		top <span class="token operator">=</span> newTop<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	
+	<span class="token keyword">public</span> T <span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">}</span>
+	<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> top <span class="token operator">==</span> null<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre>
+<h5 id="hints-1">Hints</h5>
+<ul>
+<li>Stacks are often useful in certain recursive algorithms. Sometimes you need to push temorary data onto a stack as you recurse, but then remove them as you backtrack (for example, because the recursive check failed).</li>
+<li>A stack can be used to implement a recursive algorithm iteratively.</li>
+</ul>
+<h3 id="queue">Queue</h3>
+<p>A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle. Queues are often used in scenarios where tasks or data must be processed in the order they arrive, such as in task scheduling, print job management, or breadth-first search algorithms. In a queue:</p>
+<ul>
+<li><code>add(item)</code>: operation is used to add an element to the rear or end of the queue.</li>
+<li><code>remove()</code>: This operation is used to remove an element from the front or beginning of the queue.</li>
+<li><code>peek()</code>: It points to the element at the front of the queue.</li>
+<li><code>rear()/back()</code>: It points to the element at the rear of the queue.</li>
+<li><code>isEmpty()</code>: Returns true if queue is empty.</li>
+</ul>
+<p>Queue can be implemented with a linked list. In fact, they are essentially the same thing, as long as items are added and removed from opposite sides.</p>
+<h5 id="time-complexity-3">Time Complexity</h5>
+
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Access</th>
+<th>Search</th>
+<th>Insertion</th>
+<th>Deletion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Queue</td>
+<td><code>O(n)</code></td>
+<td><code>O(n)</code></td>
+<td><code>O(1)</code></td>
+<td><code>O(1)</code></td>
+</tr>
+</tbody>
+</table><h5 id="java-3">Java</h5>
+<ul>
+<li><code>Queue</code> implementations generally do not allow insertion of <code>null</code> elements, although some implementations, such as <code>LinkedList</code>, do not prohibit insertion of <code>null</code>. Even in the implementations that permit it, <code>null</code> should not be inserted into a <code>Queue</code>, as <code>null</code> is also used as a special return value by the <code>poll</code> method to indicate that the queue contains no elements.</li>
+</ul>
+<h5 id="code-3">Code</h5>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CustomQueue</span><span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+	<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">QueueNode</span><span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+		<span class="token keyword">private</span> T data<span class="token punctuation">;</span>
+		<span class="token keyword">private</span> StackNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> next<span class="token punctuation">;</span>
+		
+		<span class="token keyword">public</span> <span class="token function">QueueNode</span><span class="token punctuation">(</span>T data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">this</span><span class="token punctuation">.</span>data <span class="token operator">=</span> data
+	<span class="token punctuation">}</span>
+	
+	<span class="token keyword">private</span> QueueNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> first<span class="token punctuation">;</span>
+	<span class="token keyword">private</span> QueueNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> last<span class="token punctuation">;</span>
+
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span>T item<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		var newNode <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">QueueNode</span><span class="token operator">&lt;</span>T<span class="token operator">&gt;</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>last <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			last<span class="token punctuation">.</span>next <span class="token operator">=</span> newNode<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		last <span class="token operator">=</span> newNode<span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>first <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			first <span class="token operator">==</span> last<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> T <span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> TBD <span class="token punctuation">}</span>
+	<span class="token keyword">public</span> T <span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> TBD <span class="token punctuation">}</span>
+	<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> TBD <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="trees">Trees</h3>
+<p>Tree is a data structure composed of nodes where:</p>
+<ul>
+<li>Each tree has a root node (isn’t strictly necessary in graph theory!),</li>
+<li>The root node has zero or more child nodes</li>
+<li>Each child node has zero or more child nodes, and so on.</li>
+</ul>
+<p>Tree cannot contain a cycle. Nodes may or may not be in any particular order, they could have any data type as value and may or may not have links back to their parents. A node is called “leaf” if it has no children.</p>
+<ul>
+<li><em>Binary tree</em> is a tree in which each node has up to childen. Maximum height is <code>n</code>,<br>
+minimum is <code>floor(log (n)) + 1</code>.</li>
+<li><em>Binary search tree</em> is a binary tree in which every node fits a specific orderding property:<br>
+<code>all left decendents &lt;= n &lt; all right decendents</code>. The definition might vary sliglty with respect to equality. Under some definitions, the tree cannot have duplicate values. In others, the duplicate values will be on the right or can be on the either side. Clarify it with the interviewer. The inequality must be truee for all node’s decendents, not just its immediate children.</li>
+<li><em>Balanced binary tree</em> has guaranteed height <code>floor(log (n)) + 1</code></li>
+<li><em>Complete binary tree</em> is a tree in which every level of the tree is fully filled, except for the last level.</li>
+<li><em>Full binary tree</em> is a tree where every node has zero or two children.</li>
+<li><em>Perfect binary tree</em> is a tree that is both full and complete. Hence pefect tree has <code>2^k - 1</code> nodes, where <code>k</code> is the tree height.</li>
+</ul>
+<h5 id="time-complexity-4">Time complexity</h5>
+
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Access</th>
+<th>Search</th>
+<th>Insertion</th>
+<th>Deletion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Binary Search Tree</td>
+<td>worst <code>O(n)</code>, avg.<code>O(log n)</code></td>
+<td>worst <code>O(n)</code>, avg.<code>O(log n)</code></td>
+<td>worst <code>O(n)</code>, avg.<code>O(log n)</code></td>
+<td>worst <code>O(n)</code>, avg.<code>O(log n)</code></td>
+</tr>
+<tr>
+<td>AVL Tree</td>
+<td><code>O(log n)</code></td>
+<td><code>O(log n)</code></td>
+<td><code>O(log n)</code></td>
+<td><code>O(log n)</code></td>
+</tr>
+<tr>
+<td>Red-Black Tree</td>
+<td><code>O(log n)</code>, amortized<code>O(1)</code></td>
+<td><code>O(log n)</code>, amortized<code>O(1)</code></td>
+<td><code>O(log n)</code></td>
+<td><code>O(log n)</code></td>
+</tr>
+</tbody>
+</table><h5 id="java-4">Java</h5>
+<ul>
+<li><em>TreeMap</em>  is a map implementation that keeps its entries sorted according to the natural ordering of its keys or using a comparator if provided by the user at construction time. A Red-Black tree based <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NavigableMap.html" title="interface in java.util"><code>NavigableMap</code></a> implementation. The map is sorted according to the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html" title="interface in java.lang">natural ordering</a> of its keys, or by a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html" title="interface in java.util"><code>Comparator</code></a> provided at map creation time, depending on which constructor is used.  This implementation provides guaranteed <code>log(n)</code> time cost for the  <code>containsKey</code>,  <code>get</code>,  <code>put</code>  and  <code>remove</code>  operations.</li>
+<li><em>TreeSet</em> is a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/NavigableSet.html" title="interface in java.util"><code>NavigableSet</code></a> implementation based on a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html" title="class in java.util"><code>TreeMap</code></a>. The elements are ordered using their <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html" title="interface in java.lang">natural ordering</a>, or by a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html" title="interface in java.util"><code>Comparator</code></a> provided at set creation time, depending on which constructor is used. This implementation provides guaranteed <code>log(n)</code> time cost for the basic operations (<code>add</code>,  <code>remove</code>  and  <code>contains</code>).</li>
+</ul>
+<h5 id="avl-tree">AVL Tree</h5>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/AVL-tree-wBalance_K.svg/262px-AVL-tree-wBalance_K.svg.png" alt=""><br>
+In an AVL tree, the heights of the two child subtrees of any node differ by at most <strong>one</strong>; if at any time they differ by more than one, rebalancing is done to restore this property.</p>
+<ul>
+<li>For lookup-intensive applications, AVL trees are faster than red–black trees because they are more strictly balanced.</li>
+<li>AVL tree stores in each node height and balance of the subtrees rooted at this node.<br>
+<code>balance(n) = n.left.height - n.right.height</code><br>
+<code>-1 &lt;= balance(n) &lt;= 1</code></li>
+<li>Insertions and deletions may require the tree to be rebalanced by one or more tree rotations.</li>
+</ul>
+<p><em>simple left rotation</em><br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/AVL-simple-left_K.svg/194px-AVL-simple-left_K.svg.png" alt=""></p>
+<p><em>double right-and-left rotation from right-left shape to right-right shape to balanced</em><br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/AVL-double-rl_K.svg/264px-AVL-double-rl_K.svg.png" alt=""></p>
+<pre class=" language-java"><code class="prism  language-java">    <span class="token keyword">private</span> AVLNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token function">leftRotate</span><span class="token punctuation">(</span>AVLNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        AVLNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> r <span class="token operator">=</span> n<span class="token punctuation">.</span>right<span class="token punctuation">;</span>
+        n<span class="token punctuation">.</span>right <span class="token operator">=</span> r<span class="token punctuation">.</span>left<span class="token punctuation">;</span>
+        r<span class="token punctuation">.</span>left <span class="token operator">=</span> n<span class="token punctuation">;</span>
+        n<span class="token punctuation">.</span>height <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token function">height</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">height</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        r<span class="token punctuation">.</span>height <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token function">height</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">height</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> r<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">private</span> AVLNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> <span class="token function">rightRotate</span><span class="token punctuation">(</span>AVLNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        AVLNode<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> r <span class="token operator">=</span> n<span class="token punctuation">.</span>left<span class="token punctuation">;</span>
+        n<span class="token punctuation">.</span>left <span class="token operator">=</span> r<span class="token punctuation">.</span>right<span class="token punctuation">;</span>
+        r<span class="token punctuation">.</span>right <span class="token operator">=</span> n<span class="token punctuation">;</span>
+        n<span class="token punctuation">.</span>height <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token function">height</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">height</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        r<span class="token punctuation">.</span>height <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token function">height</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">height</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> r<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h5 id="red-black-trees">Red-Black Trees</h5>
+<p>Red-black trees do not ensure quite as strict balancing, but the balancing is still good enough to ensure <code>O(log n)</code> insertions, deletions and retrievals. They require a bit less memory and rebalance faster (which means faster insertions and removals), so they are often used in situations where the tree will be modified frequently. The nodes in a red-black tree hold an extra bit called “color” representing “red” and “black” which is used when re-organising the tree to ensure that it is always approximately balanced.<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Red-black_tree_example_with_NIL.svg/316px-Red-black_tree_example_with_NIL.svg.png" alt=""></p>
+<p>Properties:</p>
+<ol>
+<li>Every node is either red or black.</li>
+<li>The root is black.</li>
+<li>The leaves, which are <code>null</code> nodes, are considered black.</li>
+<li>Every red node must have two black children. That is a red node cannot have red children.</li>
+<li>Every path from a node to its leaves must have same number of black children.</li>
+</ol>
+<p>(Conclusion) If a node  <strong>N</strong>  has exactly one child, it must be a red child, because if it were black, its <code>null</code> descendants would sit at a different black depth than  <strong>N</strong>’s <code>null</code> child, violating requirement 5.</p>
+<p>Inserting a new node into a red-black tree starts off with a typical binary search tree insertion.</p>
+<ul>
+<li>New nodes are inserted at a leaf, which means they replace a black node.</li>
+<li>New nodes are always colored red and are given two black leaf (<code>null</code>) nodes.</li>
+</ul>
+<p>After insertion any resulting red-black property violoations have to be fixed:</p>
+<ul>
+<li>Red violations: a red node has a red child (or the root is red).</li>
+<li>Black violations: one path has more blacks than another path.</li>
+</ul>
+<p>In special case when the root is red just turn it black to satisfy property 2, it won’t violate the other constraints. If parent of inserted node is red there is red violation. Let’s call <code>N</code> the current node. <code>P</code> is <code>N</code>'s parent. <code>G</code> is <code>N</code>'s grandparent. <code>U</code> is <code>N</code>'s uncle and <code>P</code>s sibling. We know that:</p>
+<ul>
+<li><code>N</code> is red and <code>P</code> is red, since we have a red violation.</li>
+<li><code>G</code> is black since previously there wasn’t a red violation.</li>
+</ul>
+<p>Unknown:</p>
+<ul>
+<li><code>U</code> could be either red or black</li>
+<li><code>U</code> could be either left or right child.</li>
+<li><code>N</code> could be either left or right child.</li>
+</ul>
+<p>Cases:</p>
+<ol>
+<li><code>U</code> is red.</li>
+<li><code>U</code> is black - need to consider configurations (left vs. right child) of <code>N</code> and <code>U</code>.<br>
+a) <code>N</code> and <code>P</code> are both left children.<br>
+b) <code>P</code> is a left child and <code>N</code> is a right child.<br>
+c) <code>N</code> and <code>P</code> are both right children.<br>
+b) <code>P</code> is a right child and <code>N</code> is a left child.</li>
+</ol>
+<p>For the first case just toggle colors of <code>P</code>, <code>U</code>, and <code>G</code>. And then apply the full logic recursively to handle a red violation, where the <code>G</code> bbecomes the new <code>N</code>. For second case tree rotations and recoloring apply. See <a href="https://en.wikipedia.org/wiki/Red%E2%80%93black_tree#Operations">Red–black tree operations</a>.</p>
+<h5 id="heaps">Heaps</h5>
+<p>A heap is a complete binary tree (that is, filled other that the rightmost elements on the last level) where each node is smaller (<em>min-heap</em>) or bigger (<em>max-heap</em>) than its children. The root, therefore, is the minimum or the maximum element in the tree.</p>
+<ul>
+<li>Usually heaps are represented in an array.</li>
+<li>Given a node at index <code>i</code>, its children are at indices <code>2i+1</code> and <code>2i+2</code>, whereas the parent node will be at index <code>(i-1)/2</code>.</li>
+<li>Inserting an element into a heap has <code>O(log n)</code> complexity, same as extracting minimum (or maximum, depending on the heap type) element.</li>
+<li><em>Priority queue</em> can be implemented using min (or max) heap.</li>
+</ul>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MaxHeap</span><span class="token operator">&lt;</span>T <span class="token keyword">extends</span> <span class="token class-name">Comparable</span><span class="token operator">&lt;</span>T<span class="token operator">&gt;&gt;</span> <span class="token punctuation">{</span>
+	<span class="token keyword">private</span> ArrayList<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> heap<span class="token punctuation">;</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> size<span class="token punctuation">;</span>
+
+	<span class="token keyword">public</span> <span class="token function">MaxHeap</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>size <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		heap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">T</span><span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span>capacity<span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	
+	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">insert</span><span class="token punctuation">(</span>T value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">int</span> current <span class="token operator">=</span> heap<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		heap<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>heap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span>heap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token function">parent</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token function">swap</span><span class="token punctuation">(</span>current<span class="token punctuation">,</span> <span class="token function">parent</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			current <span class="token operator">=</span> <span class="token function">parent</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	
+	<span class="token keyword">public</span> T <span class="token function">extractMax</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>heap<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+		    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">EmptyHeapException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+		<span class="token punctuation">}</span>  
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>heap<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+		    <span class="token keyword">return</span> heap<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+		<span class="token punctuation">}</span>	
+		T lastValue <span class="token operator">=</span> heap<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>heap<span class="token punctuation">.</span>size <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		T value <span class="token operator">=</span> heap<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> lastValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">heapify</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> value<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">private</span> <span class="token keyword">int</span> <span class="token function">parent</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token punctuation">(</span>index<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> <span class="token function">leftChild</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token number">2</span><span class="token operator">*</span>index<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+	<span class="token keyword">private</span> <span class="token keyword">int</span> <span class="token function">rightChild</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token number">2</span><span class="token operator">*</span>index<span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+	
+	<span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">swap</span><span class="token punctuation">(</span><span class="token keyword">int</span> index1<span class="token punctuation">,</span> <span class="token keyword">int</span> index2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		T temp <span class="token operator">=</span> heap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>index1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		heap<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>index1<span class="token punctuation">,</span> heap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>index2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		heap<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>index2<span class="token punctuation">,</span> temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">heapify</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isLeaf</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		T value <span class="token operator">=</span> heap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">rightChild</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span> <span class="token operator">&gt;=</span> heap<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>value<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span>heap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token function">leftChild</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+			    <span class="token function">swap</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token function">leftChild</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+			    <span class="token function">heapify</span><span class="token punctuation">(</span><span class="token function">leftChild</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+		    <span class="token punctuation">}</span>  
+		    <span class="token keyword">return</span><span class="token punctuation">;</span>  
+		<span class="token punctuation">}</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>value<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span>heap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token function">leftChild</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token operator">||</span>
+			value<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span>heap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token function">rightChild</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>heap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token function">leftChild</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span>
+					<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span>heap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token function">rightChild</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token function">swap</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token function">leftChild</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token function">heapify</span><span class="token punctuation">(</span><span class="token function">leftChild</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			<span class="token keyword">else</span> <span class="token punctuation">{</span>
+				<span class="token function">swap</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token function">rightChild</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token function">heapify</span><span class="token punctuation">(</span><span class="token function">rightChild</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">private</span> <span class="token keyword">boolean</span> <span class="token function">isLeaf</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> index <span class="token operator">&gt;=</span> heap<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span> <span class="token operator">&amp;&amp;</span> index <span class="token operator">&lt;=</span> heap<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h5 id="tries">Tries</h5>
+<p>A trie (sometimes called a <em>prefix tree</em>) is a variant of an n-ary tree in which characters are stored at each node. Each path down the tree may represent a word. <code>Null</code> nodes are often used to indicate complete word.</p>
+<ul>
+<li>Very commonly used to store entire language for quick prefix lookups. While hash table can quickly look up whether a string is a valid word, it cannot tell us if string is a valid prefix of any valid words.</li>
+<li>A trie can check if a string is a valid prefix in <code>O(k)</code> time where <code>k</code> is the length of the string.</li>
+</ul>
+<h3 id="graphs">Graphs</h3>
+<p>Tree is a type of graph but not all graphs are trees. Tree is a <em>connected graph without cycles</em>. A graph is a collection of nodes with edges between (some of) them.</p>
+<ul>
+<li>Graph can be either directed or undirected. Edges in directed grapqh are <em>one-way</em> only.</li>
+<li>Graph might consist of multiple isolated subgraphs. If there is a path between every pair of vertices, it is called a <em>connected graph</em>.</li>
+<li>The graph can also have cycles (or not). An <em>acyclic graph</em> is one without cycles.</li>
+<li>Graph can be represented using <strong>Adjacency list</strong> or <strong>Adjacency matrix</strong>.</li>
+</ul>
+<h3 id="hash-sets--hash-tablesmaps">Hash sets &amp; Hash tables/maps</h3>
+<p>Hash table is a data structure that maps keys to values for highly efficent lookup. There are a number of ways of implementing this. In a simple implementation, we use array of linked lists and a hash code function. To insert a key, we do the following:</p>
+<ol>
+<li>First Compute the key’s hash code, usually <code>int</code> or <code>long</code>. Two diffrent keys may have the same hash code.</li>
+<li>Map the hashcode to an index in an array using <code>hash(key) % array_length</code>.</li>
+<li>At the computed index store the key and the value. If there is a collision just store the key and the value as the next node in the linked list.</li>
+</ol>
+<p>To retrive the value the process is repeated. If the number of collisions is very high, the worst case runtime is <code>O(n)</code>, where the <code>n</code> is the number of keys. However, assuming a good implementation that keeps collisions to a minimum, the average lookup time is <code>O(1)</code>.</p>
+<p>Hash set is a special variant of hash table/map.</p>
+<p>Alternatively, hash table can be implemented with a balanced binary search tree. That gives <code>O(log n)</code> lookup time. The advantage is potentially using less space (no need to allocate a large array). We can also iterate through the keys in order.</p>
+<h2 id="algorithms">Algorithms</h2>
+<h3 id="trees-1">Trees</h3>
+<h4 id="binary-tree-traversal">Binary tree traversal</h4>
+<p>There are three ways to traverse a tree:</p>
+<ul>
+<li>In-order traversal - visiting the left branch, then the current node, and finally the right branch.</li>
+</ul>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">void</span> <span class="token function">inOrderTraversal</span><span class="token punctuation">(</span>TreeNode node<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>node <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">inOrderTraversal</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">visit</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">inOrderTraversal</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>Pre-order traversal - visits the current node before its child nodes.</li>
+</ul>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">void</span> <span class="token function">preOrderTraversal</span><span class="token punctuation">(</span>TreeNode node<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>node <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">visit</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">preOrderTraversal</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">preOrderTraversal</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>Post-order traversal - visits the current node after it child nodes</li>
+</ul>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">void</span> <span class="token function">postOrderTraversal</span><span class="token punctuation">(</span>TreeNode node<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>node <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">postOrderTraversal</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">postOrderTraversal</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">visit</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="graph-search">Graph search</h3>
+<p>Two most common ways to search a graph are depth-first search and breadth-first search. DFS is often preffered over BFS if we want to visit each node in the graph (because it is simpler). However, if we want to find the shortest path (or just any path) between two nodes, BFS is generally better. Consider an example representing all friendships in the entire world in a graph and trying to find a path of firendships between two people (let’s say Tom and Sue). In DFS we would quickly find ourselves very far away from Tom, we could iterate through most of the world without realizing that, in fact, Sue is Tom’s friend. In BFS we would stay close to Tom as long as possible. We might iterate through many of Tom’s friends, but wouldn’t go to his more distant connections until absolutely necessary.</p>
+<h4 id="depth-first-search-dfs">Depth-first search (DFS)</h4>
+<p>In depth-first search, we start at the root (or another arbitrarily selected node) and explore each branch completely before moving on to the next branch. That is, we go deep first before we go wide. DFS is a recursive algorithm.</p>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">void</span> <span class="token function">search</span><span class="token punctuation">(</span>Node root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+	<span class="token function">visit</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	root<span class="token punctuation">.</span><span class="token function">setVisited</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span>Node currentNode<span class="token operator">:</span> root<span class="token punctuation">.</span><span class="token function">getAdjacent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>node<span class="token punctuation">.</span><span class="token function">isVisited</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token function">search</span><span class="token punctuation">(</span>currentNode<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="breath-first-search-bfs">Breath-first search (BFS)</h4>
+<p>In breadth-first search we start at the root (or another arbitrarily selected node) and explore each neighbor before going on to any of their children. That is, we go wide before we go deep.</p>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">void</span> <span class="token function">search</span><span class="token punctuation">(</span>Node root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	Queue<span class="token operator">&lt;</span><span class="token operator">&gt;</span> queue <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Deque</span><span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	root<span class="token punctuation">.</span><span class="token function">markVisited</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	queue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// add to the end of queue</span>
+
+	<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>queue<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		Node current <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">visit</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// do something on the node</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span>Node neighbour <span class="token operator">:</span> current<span class="token punctuation">.</span><span class="token function">getAdjacent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>neighbour<span class="token punctuation">.</span><span class="token function">isVisited</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				neighbour<span class="token punctuation">.</span><span class="token function">markVisited</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				queue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>neighbour<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="dijkstras-algorithm">Dijkstra’s Algorithm</h4>
+<p>In some graphs edges have weights (weighted graph). If the graph represented a city, each each might represent a road and its weight might represent the lenght or travel time. In this case, we might want to ask, just as GPS mapping system does, what’s the shortest path from your current location to another point p? This is where Dijkstra’s algorithm comes in. It is an algorithm to find the shortest path between two points in weighted directed graph (which might have cycles). All edges must have positive values.<br>
+Dijkstra’s algorithm implementation usually uses a priority queue. <strong>Priority queue</strong> is an abstract data type that supports insertion of an object and key, removing the object with minimum (or maximum) key and decreasing the key (think of typical queue, except that, instead of removing the oldest item, it removes the item with the highest or lowest priority).</p>
+<ul>
+<li>for a graph with a lot of edges (<code>e</code> close or equal to <code>v^2</code> - there can be more edges than there are pairs of vertices) it is better to implement priority queue <strong>with array</strong> - total runtime is <code>O(v^2)</code></li>
+<li>for a sparse graph it’s better to implement the priority queue <strong>with heap</strong> - total runtime is <code>O((v+e)log v)</code></li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Dijkstras_progress_animation.gif" alt=""></p>
+<p>Steps:</p>
+<ol>
+<li>Initialization - before we start exploring all paths in the graph, we first need to initialize all nodes with an infinite distance and an unknown predecessor, except the source.</li>
+<li>Evaluation - now that we have our graph initialized, we pick the node with the lowest distance from the unsettled set, then we evaluate all adjacent nodes that are not in settled nodes.<br>
+<img src="https://www.baeldung.com/wp-content/uploads/2017/01/step8.png" alt="step8" height="300"><br>
+<img src="https://i.imgur.com/WtxwKYF.png" alt="" height="400"></li>
+</ol>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">private</span> Map<span class="token operator">&lt;</span>Node<span class="token punctuation">,</span> ArrayList<span class="token operator">&lt;</span>Edge<span class="token operator">&gt;&gt;</span> adjecencyListMap<span class="token punctuation">;</span>
+<span class="token comment">/**
+* @return a list of nodes that form the shortest path from start to goal
+*/</span>
+<span class="token keyword">public</span> List<span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span> <span class="token function">dijkstra</span><span class="token punctuation">(</span>Node start<span class="token punctuation">,</span> Node goal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	Set<span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span> visited <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashSet</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	Map<span class="token operator">&lt;</span>Node<span class="token punctuation">,</span> Node<span class="token operator">&gt;</span> parentMap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	Map<span class="token operator">&lt;</span>Node<span class="token punctuation">,</span> Double<span class="token operator">&gt;</span> distances <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+	adjecencyListMap<span class="token punctuation">.</span><span class="token function">keySet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">foreach</span><span class="token punctuation">(</span>node <span class="token operator">-</span><span class="token operator">&gt;</span> distances<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> Double<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>	
+	var queue <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PriorityQueue</span><span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> Comparator<span class="token punctuation">.</span><span class="token function">comparingDouble</span><span class="token punctuation">(</span>distances<span class="token operator">:</span><span class="token operator">:</span>get<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+	queue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>start<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	distances<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>start<span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token operator">!</span>queue<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		Node current <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>visited<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		
+			visited<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>current<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>goal<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">return</span> <span class="token function">getPath</span><span class="token punctuation">(</span>parentMap<span class="token punctuation">,</span> start<span class="token punctuation">,</span> goal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			<span class="token function">visit</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// do custom stuff</span>
+			
+			<span class="token keyword">for</span> <span class="token punctuation">(</span>Edge edge <span class="token operator">:</span> adjecencyListMap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				Node next <span class="token operator">=</span> edge<span class="token punctuation">.</span><span class="token function">getEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>distances<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span> <span class="token operator">+</span> edge<span class="token punctuation">.</span><span class="token function">getLength</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+						<span class="token operator">&lt;</span> distances<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>next<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					var newDistance <span class="token operator">=</span> distances<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span> <span class="token operator">+</span> edge<span class="token punctuation">.</span><span class="token function">getLength</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					distances<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>next<span class="token punctuation">,</span> newDistance<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					parentMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>next<span class="token punctuation">,</span> current<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					queue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>next<span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> null<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">private</span> List<span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span> <span class="token function">getPath</span><span class="token punctuation">(</span>Map<span class="token operator">&lt;</span>Node<span class="token punctuation">,</span> Node<span class="token operator">&gt;</span> parentMap<span class="token punctuation">,</span> Node start<span class="token punctuation">,</span> Node goal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	LinkedList<span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span> path <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	Node current <span class="token operator">=</span> goal<span class="token punctuation">;</span>
+	<span class="token keyword">while</span> <span class="token punctuation">(</span>current <span class="token operator">!=</span> start<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		path<span class="token punctuation">.</span><span class="token function">addFirst</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		current <span class="token operator">=</span> parentMap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	path<span class="token punctuation">.</span><span class="token function">addFirst</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> path<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="a">A*</h4>
+<p>‘A-star’ is a graph traversal and path search algorithm which is used in many fields of computer science due to its completeness, optimality, and optimal efficiency. One major practical drawback is its <code>O(b^d)</code> (where b - branching factor, d - depth of the solution) space complexity, as it stores all generated nodes in memory. The time complexity of A* depends on the heuristic. One common variants of Dijkstra’s algorithm can be viewed as a special case of A* where the heuristic <code>h(n)=0</code> for all nodes.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Weighted_A_star_with_eps_5.gif" alt=""></p>
+<p>From Dijkstra’s algorithm it only differs by the comparator, which in this case employs heuristic to more optimally prioritize visited nodes.</p>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">private</span> Map<span class="token operator">&lt;</span>Node<span class="token punctuation">,</span> ArrayList<span class="token operator">&lt;</span>Edge<span class="token operator">&gt;&gt;</span> adjecencyListMap<span class="token punctuation">;</span>
+<span class="token comment">/**
+* Each node must have known coordinates so the absolute distance between them can be computed.
+* 
+* @return a list of nodes that form the shortest path from start to goal
+*/</span>
+<span class="token keyword">public</span> List<span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span> <span class="token function">aStar</span><span class="token punctuation">(</span>Node start<span class="token punctuation">,</span> Node goal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	Set<span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span> visited <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashSet</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	Map<span class="token operator">&lt;</span>Node<span class="token punctuation">,</span> Node<span class="token operator">&gt;</span> parentMap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	Map<span class="token operator">&lt;</span>Node<span class="token punctuation">,</span> Double<span class="token operator">&gt;</span> distances <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+	adjecencyListMap<span class="token punctuation">.</span><span class="token function">keySet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">foreach</span><span class="token punctuation">(</span>node <span class="token operator">-</span><span class="token operator">&gt;</span> distances<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> Double<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+	var comparator <span class="token operator">=</span> Comparator<span class="token punctuation">.</span><span class="token function">comparingDouble</span><span class="token punctuation">(</span><span class="token punctuation">(</span>Node node<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> 
+			distances<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span> <span class="token operator">+</span> node<span class="token punctuation">.</span><span class="token function">distance</span><span class="token punctuation">(</span>goal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	var queue <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PriorityQueue</span><span class="token operator">&lt;</span>Node<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> comparator<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+	queue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>start<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	distances<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>start<span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token operator">!</span>queue<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		Node current <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>visited<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		
+			visited<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>current<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>goal<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">return</span> <span class="token function">getPath</span><span class="token punctuation">(</span>parentMap<span class="token punctuation">,</span> start<span class="token punctuation">,</span> goal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			<span class="token function">visit</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// do custom stuff</span>
+			
+			<span class="token keyword">for</span> <span class="token punctuation">(</span>Edge edge <span class="token operator">:</span> adjecencyListMap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				Node next <span class="token operator">=</span> edge<span class="token punctuation">.</span><span class="token function">getEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>distances<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span> <span class="token operator">+</span> edge<span class="token punctuation">.</span><span class="token function">getLength</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+						<span class="token operator">&lt;</span> distances<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>next<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					var newDistance <span class="token operator">=</span> distances<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span> <span class="token operator">+</span> edge<span class="token punctuation">.</span><span class="token function">getLength</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					distances<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>next<span class="token punctuation">,</span> newDistance<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					parentMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>next<span class="token punctuation">,</span> current<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					queue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>next<span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> null<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="binary-search">Binary search</h3>
+<p>In computer science, binary search is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found. If the search ends with the remaining half being empty, the target is not in the array. The binary search tree and B-tree data structures are based on binary search.</p>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">binarySearchIteratively</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> sortedArray<span class="token punctuation">,</span> <span class="token keyword">int</span> key<span class="token punctuation">,</span> <span class="token keyword">int</span> low<span class="token punctuation">,</span> <span class="token keyword">int</span> high<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">int</span> index <span class="token operator">=</span> Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">;</span>
+	<span class="token keyword">while</span> <span class="token punctuation">(</span>low <span class="token operator">&lt;=</span> high<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+		<span class="token keyword">int</span> mid <span class="token operator">=</span> low <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>high <span class="token operator">-</span> low<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>sortedArray<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&lt;</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			low <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> 
+		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>sortedArray<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&gt;</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			high <span class="token operator">=</span> mid <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> 
+		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>sortedArray<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">==</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			index <span class="token operator">=</span> mid<span class="token punctuation">;</span> 
+			<span class="token keyword">break</span><span class="token punctuation">;</span> 
+		<span class="token punctuation">}</span> 
+	<span class="token punctuation">}</span> 
+	<span class="token keyword">return</span> index<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">runBinarySearchRecursively</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> sortedArray<span class="token punctuation">,</span> <span class="token keyword">int</span> key<span class="token punctuation">,</span> <span class="token keyword">int</span> low<span class="token punctuation">,</span> <span class="token keyword">int</span> high<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> middle <span class="token operator">=</span> low  <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>high <span class="token operator">-</span> low<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>high <span class="token operator">&lt;</span> low<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>key <span class="token operator">==</span> sortedArray<span class="token punctuation">[</span>middle<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> middle<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>key <span class="token operator">&lt;</span> sortedArray<span class="token punctuation">[</span>middle<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">runBinarySearchRecursively</span><span class="token punctuation">(</span>sortedArray<span class="token punctuation">,</span> key<span class="token punctuation">,</span> low<span class="token punctuation">,</span> middle <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">runBinarySearchRecursively</span><span class="token punctuation">(</span>sortedArray<span class="token punctuation">,</span> key<span class="token punctuation">,</span> middle <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> high<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> index <span class="token operator">=</span> Arrays<span class="token punctuation">.</span><span class="token function">binarySearch</span><span class="token punctuation">(</span>sortedArray<span class="token punctuation">,</span> key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> index <span class="token operator">=</span> Collections<span class="token punctuation">.</span><span class="token function">binarySearch</span><span class="token punctuation">(</span>sortedList<span class="token punctuation">,</span> key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>A few points to be aware of while using recursion:</p>
+<ol>
+<li>Recursion can be slower due to the overhead of maintaining a  <em>stack</em>  and usually takes up more memory.</li>
+<li>Recursion is not <em>stack</em>-friendly. It may cause <em>StackOverflowException</em> when processing big data sets.</li>
+<li>Recursion adds clarity to the code as it makes it shorter in comparison to the iterative approach.</li>
+</ol>
+<p>Ideally, a binary search will perform less number of comparisons in contrast to a linear search for large values of n. For smaller values of n, the linear search could perform better than a binary search.</p>
+<h3 id="sorting-algorithms">Sorting algorithms</h3>
+<p>In computer science, a sorting algorithm is an algorithm that puts elements of a list into an order. The most frequently used orders are numerical order and lexicographical order, and either ascending or descending. Efficient sorting is important for optimizing the efficiency of other algorithms (such as search and merge algorithms).</p>
+<ul>
+<li>For optimum efficiency, the input data should be stored in a data structure which allows random access rather than one that allows only sequential access.</li>
+<li>Stable sort algorithms sort equal elements in the same order that they appear in the input.</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>Best</th>
+<th>Average</th>
+<th>Worst</th>
+<th>Memory</th>
+<th>Stable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bubble Sort</td>
+<td><code>O(n)</code></td>
+<td><code>O(n^2)</code></td>
+<td><code>O(n^2)</code></td>
+<td><code>O(1)</code></td>
+<td><code>yes</code></td>
+</tr>
+<tr>
+<td>Selection Sort</td>
+<td><code>O(n^2)</code></td>
+<td><code>O(n^2)</code></td>
+<td><code>O(n^2)</code></td>
+<td><code>O(1)</code></td>
+<td><code>no</code></td>
+</tr>
+<tr>
+<td>Insertion Sort</td>
+<td><code>O(n)</code></td>
+<td><code>O(n^2)</code></td>
+<td><code>O(n^2)</code></td>
+<td><code>O(1)</code></td>
+<td><code>yes</code></td>
+</tr>
+<tr>
+<td>Quicksort</td>
+<td><code>O(n log n)</code></td>
+<td><code>O(n log n)</code></td>
+<td><code>O(n^2)</code></td>
+<td><code>O(log n)</code></td>
+<td><code>no</code></td>
+</tr>
+<tr>
+<td>Merge sort</td>
+<td><code>O(n log n)</code></td>
+<td><code>O(n log n)</code></td>
+<td><code>O(n log n)</code></td>
+<td><code>O(n)</code></td>
+<td><code>yes</code></td>
+</tr>
+<tr>
+<td>Heapsort</td>
+<td><code>O(n log n)</code></td>
+<td><code>O(n log n)</code></td>
+<td><code>O(n log n)</code></td>
+<td><code>O(log n)</code></td>
+<td><code>no</code></td>
+</tr>
+</tbody>
+</table><h4 id="bubble-sort">Bubble sort</h4>
+<p>Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the input list element by element, comparing the current element with the one after it, swapping their values if needed.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt=""></p>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">void</span> <span class="token function">bubbleSort</span><span class="token punctuation">(</span><span class="token keyword">int</span> array<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">int</span> size <span class="token operator">=</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+    <span class="token comment">// loop to access each array element</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> size <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token comment">// loop to compare array elements</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> size <span class="token operator">-</span> i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	        <span class="token comment">// compare - change &gt; to &lt; to sort in descending order</span>
+	        <span class="token keyword">if</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&gt;</span> array<span class="token punctuation">[</span>j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		        <span class="token comment">// swapping occurs if elements are not in the intended order</span>
+		        <span class="token keyword">int</span> temp <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		        array<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+		        array<span class="token punctuation">[</span>j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+		    <span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="selection-sort">Selection sort</h4>
+<p>In computer science, selection sort is an in-place comparison sorting algorithm. It has an O(n2) time complexity, which makes it inefficient on large lists, and generally performs worse than the similar insertion sort. Selection sort is noted for its simplicity.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif" alt=""></p>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">void</span> <span class="token function">selectionSort</span><span class="token punctuation">(</span><span class="token keyword">int</span> array<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">int</span> size <span class="token operator">=</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> step <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> step <span class="token operator">&lt;</span> size <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> step<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">int</span> min_idx <span class="token operator">=</span> step<span class="token punctuation">;</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> step <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> size<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token comment">// To sort in descending order change &gt; to &lt;, select the minimum element in each loop</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;</span> array<span class="token punctuation">[</span>min_idx<span class="token punctuation">]</span><span class="token punctuation">)</span> min_idx <span class="token operator">=</span> i<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token comment">// put min at the correct position</span>
+		<span class="token keyword">int</span> temp <span class="token operator">=</span> array<span class="token punctuation">[</span>step<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		array<span class="token punctuation">[</span>step<span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>min_idx<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		array<span class="token punctuation">[</span>min_idx<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="insertion-sort">Insertion sort</h4>
+<p>Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time by comparisons. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort. However, insertion sort provides several advantages:</p>
+<ul>
+<li>Simple implementation: Jon Bentley shows a three-line C/C++ version that is five lines when optimized.</li>
+<li>Efficient for (quite) small data sets, much like other quadratic (i.e., O(n2)) sorting algorithms.</li>
+<li>More efficient in practice than most other simple quadratic algorithms such as selection sort or bubble sort.</li>
+<li>Adaptive - efficient for data sets that are already substantially sorted: the time complexity is <code>O(kn)</code> when each element in the input is no more than k places away from its sorted position.</li>
+<li>Stable - does not change the relative order of elements with equal keys</li>
+<li>In-place - only requires a constant amount O(1) of additional memory space</li>
+<li>Online - can sort a list as it receives it</li>
+</ul>
+<p>When people manually sort cards in a bridge hand, most use a method that is similar to insertion sort.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif" alt=""></p>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">void</span> <span class="token function">insertionSort</span><span class="token punctuation">(</span><span class="token keyword">int</span> array<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">int</span> size <span class="token operator">=</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> step <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> step <span class="token operator">&lt;</span> size<span class="token punctuation">;</span> step<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">int</span> key <span class="token operator">=</span> array<span class="token punctuation">[</span>step<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token keyword">int</span> j <span class="token operator">=</span> step <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+		<span class="token comment">// Compare key with each element on the left of it until an element smaller than</span>
+		<span class="token comment">// it is found. For descending order, change &lt; to &gt;</span>
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>j <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> key <span class="token operator">&lt;</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			array<span class="token punctuation">[</span>j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+			<span class="token operator">--</span>j<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token comment">// Place key at after the element just smaller than it.</span>
+	array<span class="token punctuation">[</span>j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> key<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="quicksort">Quicksort</h4>
+<p>It is still a commonly used algorithm for sorting. Overall, it is slightly faster than merge sort and heapsort for randomized data, particularly on larger distributions. Quicksort is a <strong>divide-and-conquer</strong> algorithm. It works by selecting a ‘pivot’ element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot.<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif" alt="" width="300"></p>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">private</span> <span class="token keyword">int</span> <span class="token function">partition</span><span class="token punctuation">(</span><span class="token keyword">int</span> arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> begin<span class="token punctuation">,</span> <span class="token keyword">int</span> end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> pivot <span class="token operator">=</span> arr<span class="token punctuation">[</span>end<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// pivot should be picked at random</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token punctuation">(</span>begin <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> begin<span class="token punctuation">;</span> j <span class="token operator">&lt;</span> end<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> pivot<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            i<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> swapTemp <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> swapTemp<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">int</span> swapTemp <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    arr<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>end<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    arr<span class="token punctuation">[</span>end<span class="token punctuation">]</span> <span class="token operator">=</span> swapTemp<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">quickSort</span><span class="token punctuation">(</span><span class="token keyword">int</span> arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> begin<span class="token punctuation">,</span> <span class="token keyword">int</span> end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>begin <span class="token operator">&lt;</span> end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> partitionIndex <span class="token operator">=</span> <span class="token function">partition</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> begin<span class="token punctuation">,</span> end<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">quickSort</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> begin<span class="token punctuation">,</span> partitionIndex<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">quickSort</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> partitionIndex<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> end<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="merge-sort">Merge sort</h4>
+<p>Merge sort is an efficient, general-purpose, and comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the relative order of equal elements is the same in the input and output. Merge sort is a divide-and-conquer algorithm. Conceptually, a merge sort works as follows:</p>
+<ol>
+<li>Divide the unsorted list into n sublists, each containing one element (a list of one element is considered sorted).</li>
+<li>Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.</li>
+</ol>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" alt=""></p>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">merge</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> l<span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> r<span class="token punctuation">,</span> <span class="token keyword">int</span> left<span class="token punctuation">,</span> <span class="token keyword">int</span> right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ 
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> left <span class="token operator">&amp;&amp;</span> j <span class="token operator">&lt;</span> right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>l<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> r<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            a<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> l<span class="token punctuation">[</span>i<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            a<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> r<span class="token punctuation">[</span>j<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> left<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        a<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> l<span class="token punctuation">[</span>i<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>j <span class="token operator">&lt;</span> right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        a<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> r<span class="token punctuation">[</span>j<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">mergeSort</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">int</span> mid <span class="token operator">=</span> n <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> l <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> r <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>n <span class="token operator">-</span> mid<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> mid<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        l<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> mid<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        r<span class="token punctuation">[</span>i <span class="token operator">-</span> mid<span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">mergeSort</span><span class="token punctuation">(</span>l<span class="token punctuation">,</span> mid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">mergeSort</span><span class="token punctuation">(</span>r<span class="token punctuation">,</span> n <span class="token operator">-</span> mid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">merge</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> l<span class="token punctuation">,</span> r<span class="token punctuation">,</span> mid<span class="token punctuation">,</span> n <span class="token operator">-</span> mid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="heapsort">Heapsort</h4>
+<p>In computer science, heapsort is a comparison-based sorting algorithm which can be thought of as “an implementation of selection sort using the right data structure”. Like selection sort, heapsort divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element from it and inserting it into the sorted region. Unlike selection sort, heapsort does not waste time with a linear-time scan of the unsorted region; rather, heap sort maintains the unsorted region in a heap data structure to efficiently find the largest element in each step.<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif" alt=""></p>
+<h4 id="radix-sort">Radix sort</h4>
+<p>Radix sort is a sorting algorithm for integers (and some other data types) that takes advantage of the fact that integers have a finite number of bits. In radix sort, we iterate through each digit of the number, grouping numbers by each digit. For example, if we have an array of integers, we might first sort by the first digit, so that 0s are grouped together, then sort by subsequent digits unitl finally whole array is sorted.</p>
+<h3 id="algorithmic-paradigms">Algorithmic paradigms</h3>
+<h4 id="dynamic-programming">Dynamic programming</h4>
+<p>Dynamic programming as a problem-solving technique that is particularly useful when you’re faced with a problem that can be broken down into smaller overlapping subproblems. It’s a method for solving complex problems by breaking them down into simpler, overlapping subproblems and solving each subproblem only once, storing the results of subproblems in memory so that you don’t have to recompute them when needed. Dynamic programming is especially valuable for optimizing recursive algorithms that have overlapping subproblems.</p>
+<p>Here’s a more detailed explanation:</p>
+<ol>
+<li><strong>Breaking Down the Problem:</strong> Dynamic programming starts by breaking down a complex problem into smaller, more manageable subproblems. These subproblems should ideally have two key characteristics:
+<ul>
+<li>They are related to the original problem and share some commonality.</li>
+<li>They can be solved independently of each other.</li>
+</ul>
+</li>
+<li><strong>Memoization or Tabulation:</strong> Dynamic programming can be implemented using two approaches: memoization and tabulation.
+<ul>
+<li><strong>Memoization:</strong> In this approach, you solve each subproblem once and store the result in a data structure (usually an array or a dictionary) so that you can look it up and reuse it when needed. This is typically done using recursion.</li>
+<li><strong>Tabulation:</strong> In this approach, you build a table (usually a 2D array) and iteratively fill it in a bottom-up manner. You start with the simplest subproblem and work your way up to the original problem.</li>
+</ul>
+</li>
+<li><strong>Optimal Substructure:</strong> Dynamic programming works when the problem exhibits optimal substructure, which means that the optimal solution to the original problem can be constructed from the optimal solutions of its subproblems.</li>
+<li><strong>Time and Space Complexity:</strong> Dynamic programming can lead to significant time and space optimizations because it avoids redundant calculations by storing and reusing intermediate results. However, it’s important to consider the trade-off between time and space complexity, as sometimes it may require more memory to store results.</li>
+<li><strong>Examples:</strong> In the interview, it’s a good idea to provide examples of problems where dynamic programming can be applied, such as the Fibonacci sequence, the Knapsack problem, shortest path problems (like the Dijkstra algorithm), and more complex problems like the Longest Common Subsequence (LCS) or the Traveling Salesman Problem (TSP).</li>
+<li><strong>Dynamic Programming vs. Divide and Conquer:</strong> It’s also essential to distinguish dynamic programming from divide and conquer. While both techniques involve breaking down problems, dynamic programming emphasizes reusing solutions to subproblems to improve efficiency, whereas divide and conquer typically does not reuse intermediate results.</li>
+</ol>
+<p>To summarize, dynamic programming is a powerful problem-solving technique that aims to optimize solutions to complex problems by breaking them down into smaller overlapping subproblems and reusing solutions to those subproblems. It’s widely used in algorithm design to improve efficiency and reduce redundancy.</p>
+<h4 id="divide-and-conquer">Divide and conquer</h4>
+<p>“Divide and conquer” asis a classic problem-solving technique and algorithmic paradigm that breaks down a complex problem into simpler, non-overlapping subproblems, solves these subproblems independently, and then combines their solutions to solve the original problem. This approach is particularly useful for solving problems that can be divided into similar or identical subproblems and can often lead to more efficient algorithms.</p>
+<p>Here’s a more detailed explanation:</p>
+<ol>
+<li>
+<p><strong>Divide:</strong> In the “divide” step, the original problem is divided into smaller, more manageable subproblems. These subproblems should ideally be:</p>
+<ul>
+<li>Non-overlapping: Each subproblem should work on a distinct portion of the original problem.</li>
+<li>Similar in structure: The subproblems should be of the same type as the original problem, just smaller in size.</li>
+</ul>
+</li>
+<li>
+<p><strong>Conquer:</strong> In the “conquer” step, you recursively or iteratively solve each of the subproblems. These subproblems are typically solved independently of each other.</p>
+</li>
+<li>
+<p><strong>Combine:</strong> In the “combine” step, you merge or combine the solutions of the subproblems to obtain the solution for the original problem. This step often involves merging or aggregating the results from the subproblems.</p>
+</li>
+<li>
+<p><strong>Base Case:</strong> Divide and conquer algorithms typically have a base case that defines when the problem is small enough to be solved directly without further division. This base case ensures that the recursion or iteration terminates.</p>
+</li>
+<li>
+<p><strong>Time Complexity:</strong> Analyzing the time complexity of divide and conquer algorithms can often be done using recurrence relations. The time complexity depends on how the problem is divided and how the solutions are combined.</p>
+</li>
+<li>
+<p><strong>Examples:</strong> During the interview, it’s a good idea to provide examples of problems that can be solved using the divide and conquer technique. Examples include:</p>
+<ul>
+<li><strong>Binary Search</strong>: Finding an element in a sorted array by repeatedly dividing the array in half.</li>
+<li><strong>Merge Sort</strong>: Sorting an array by recursively dividing it into smaller subarrays, sorting those subarrays, and then merging them.</li>
+<li><strong>Quick Sort</strong>: Another sorting algorithm that divides an array into smaller subarrays and sorts them in place.</li>
+</ul>
+</li>
+<li>
+<p><strong>Parallelism:</strong> Divide and conquer algorithms are often well-suited for parallel processing because the independent subproblems can be solved concurrently, potentially leading to significant speedup on multi-core or distributed systems.</p>
+</li>
+</ol>
+<p>To summarize, divide and conquer is a problem-solving technique that involves breaking down a complex problem into smaller, non-overlapping subproblems, solving these subproblems independently, and then combining their solutions to solve the original problem. It’s a versatile approach used in many algorithms and can lead to efficient solutions for a wide range of problems.</p>
+</div>
+</body>
+
+</html>
